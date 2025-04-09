@@ -59,6 +59,24 @@
                     </header>
                     @include('libs.nav')git
                     <main class="mt-6">
+                        <form  method="POST" >
+                            @csrf
+                        <div>
+                            <label name="email" >Email</label>
+                            <input type="email" name="email" id="email" placeholder="email">
+                        </div>
+                        <div>
+                            <label name="rfc">RFC</label>
+                            <input type="text" name="rfc" id="rfc" placeholder="RFC">
+                        </div>
+                        <div>
+                            <label name="pass">Password</label>
+                            <input type="password" name="pass" id="pass" placeholder="password">
+                        </div>
+                          <div>
+                            <button type="submit" >Enviar</button>
+                          </div>
+                        </form>
 
                     </main>
 
